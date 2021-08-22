@@ -21,7 +21,7 @@ Citizen.CreateThread(
 		if vRaw then
 			local v = json.decode(vRaw)
 			PerformHttpRequest(
-				'https://github.com/esx-framework/esx-reborn/blob/experimental/version.json',
+				'https://raw.githubusercontent.com/esx-framework/esx-reborn/experimental/version.json',
 				function(code, res, headers)
 					if code == 200 then
 						local rv = json.decode(res)
