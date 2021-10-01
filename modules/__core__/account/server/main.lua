@@ -12,6 +12,7 @@
 
 M("command")
 
+-- Create command to add money to players.
 local addMoneyCommand = Command("addmoney", "admin", _U('account_add_money'))
 addMoneyCommand:addArgument("player", "player", _U('commandgeneric_playerid'))
 addMoneyCommand:addArgument("account", "string", _U('account_account_name'))
@@ -78,6 +79,7 @@ local showMoneyCommand = Command("money", "user", _U('account_show_money_test'))
 showMoneyCommand:setHandler(function(player, args)
   if not args.player then args.player = player end
 
+  -- @TODO BUG: all player can check others money.
   local player = Player.fromId(args.player.source)
   local identity = player:getIdentity()
   local accounts = identity:getAccounts()
