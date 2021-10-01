@@ -15,12 +15,12 @@ local HUD = M('game.hud')
 module.Init()
 
 Citizen.CreateThread(function()
-
+  -- wait script to get player data
 	while (ESX.PlayerData == nil) or (ESX.PlayerData.job == nil) do
 		Citizen.Wait(0)
   end
 
-
+  -- wait script to load hud frame (what is that)
   while (not HUD.Frame) or (not HUD.Frame.loaded) do
     Citizen.Wait(0)
   end

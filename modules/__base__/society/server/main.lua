@@ -13,4 +13,5 @@
 
 module.Init()
 
+-- rcon of society money washing
 TriggerEvent('cron:runAt', 3, 0, module.WashMoneyCRON)

@@ -24,6 +24,7 @@ module.Init = function()
 
 end
 
+-- check if society exist in registered societies and return society if found
 module.GetSociety = function(name)
 	for i=1, #module.RegisteredSocieties, 1 do
 		if module.RegisteredSocieties[i].name == name then
@@ -32,6 +33,7 @@ module.GetSociety = function(name)
 	end
 end
 
+-- Check if player is boss and return boolean
 module.isPlayerBoss = function(playerId, job)
 	local xPlayer = xPlayer.fromId(playerId)
 
@@ -43,6 +45,7 @@ module.isPlayerBoss = function(playerId, job)
 	end
 end
 
+-- society money wash module
 module.WashMoneyCRON = function(d, h, m)
 	exports.ghmattimysql:execute('SELECT * FROM society_moneywash', {}, function(result)
 		for i=1, #result, 1 do
