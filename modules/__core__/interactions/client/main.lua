@@ -13,14 +13,14 @@
 module.Init()
 
 ESX.SetInterval(1, function()
-  if IsDisabledControlJustReleased(0, 37) then
+  if IsDisabledControlJustReleased(0, 37) then -- Tabulator
     if not module.FocusActive then
       module.FocusActive = true
       module.StartInteraction()
     end
   end
 
-  if IsControlJustReleased(0, 18) and module.FocusActive then
+  if IsControlJustReleased(0, 18) and module.FocusActive then -- ENTER / LEFT MOUSE BUTTON / SPACEBAR
     if module.Object and not module.Busy then
       if module.Object.interactable == "vending" then
         local object = module.Object
