@@ -174,7 +174,7 @@ INSERT INTO `vehicles` (name, model, price, category, category_label) VALUES
   ('Euros','euros',70000,'sports','Sports'),
   ('Feltzer','feltzer2',55000,'sports','Sports'),
   ('Flashgt','flashgt',70000,'sports','Sports'),
-  ('Furore GT','furoregt',45000,'sports','Sports'),\
+  ('Furore GT','furoregt',45000,'sports','Sports'),
   ('Fusilade','fusilade',40000,'sports','Sports'),
   ('Futo 2','futo2',70000,'sports','Sports'),
   ('Futo','futo',70000,'sports','Sports'),
@@ -215,7 +215,6 @@ INSERT INTO `vehicles` (name, model, price, category, category_label) VALUES
   ('Schlagen','schlagen',70000,'sports','Sports'),
   ('Schwarzer','schwarzer',70000,'sports','Sports'),
   ('Sentinel 3','sentinel3',70000,'sports','Sports'),
-  ('Sentinel3', 'sentinel3', 650000, 'sports','Sports'),
   ('Seven 70','seven70',39500,'sports','Sports'),
   ('Specter 2','specter2',70000,'sports','Sports'),
   ('Specter','specter',70000,'sports','Sports'),
@@ -335,7 +334,7 @@ INSERT INTO `vehicles` (name, model, price, category, category_label) VALUES
   ('Seminole','seminole',25000,'suvs','SUVs'),
   ('Serrano','serrano',25000,'suvs','SUVs'),
   ('Toros','toros',25000,'suvs','SUVs'),
-  ('XLS','xls',32000,'suvs','SUVs')
+  ('XLS','xls',32000,'suvs','SUVs'),
 
   -- Vans
   ('Bison','bison',45000,'vans','Vans'),
