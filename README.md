@@ -125,10 +125,10 @@ Another thing is the performance, so far, it's more optimized to work this way.
 
 ![Menu](https://i.snipboard.io/tF8AcT.jpg)
 
-### [How to create basic command <a name="examples-command"></a>](https://github.com/ESX-Framework/esx-reborn/tree/main/modules/__examples__/commands/)
+### [How to create basic command <a name="examples-command"></a>](https://github.com/esx-framework/esx-reborn/tree/development/modules/__examples__/commands/server/)
 
 ### How to add a new discord webhook and edit discord webhooks
-Go to your module and open server\main.lua. Paste this in there: 
+Go to your module and open server\main.lua. Paste this in there:
 ```
 function sendLogs (message,webhook)
   if message == nil or message == '' then return FALSE end
@@ -144,7 +144,7 @@ Now, go to your client files and add this in the places you want it.
 ```
 emitServer('toDiscord', 'The text you want '..optional, a function.. '', 'Paste your discord webhook in here.')
 ```
-If you want do delete the logs, delete the lines above in your code. 
+If you want do delete the logs, delete the lines above in your code.
 
 
 ### More to come...
